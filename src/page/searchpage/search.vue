@@ -5,6 +5,12 @@
             <input type="text">
             <span>搜索</span>
         </div>
+        <div class="histore">
+
+        </div>
+        <div class="clearHis">
+            清除历史记录
+        </div>
     </div>
 </template>
 
@@ -36,6 +42,18 @@ export default {
     i{
         font-size: .4rem
     }
+}
+.clearHis{
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    left: 15%;
+    height: .5rem;
+    line-height: .5rem;
+    color: #fff;
+    background-color: #4fcaac;
+    text-align: center;
+    z-index: 10;
 }
 </style>
 
