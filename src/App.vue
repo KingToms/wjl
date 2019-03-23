@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <FooterNav/>
+    <!-- <FooterNav/> -->
   </div>
 </template>
 
@@ -70,12 +70,12 @@ export default {
 }
 @font-face {
   font-family: 'iconfont';  /* project id 1103305 */
-  src: url('//at.alicdn.com/t/font_1103305_2vxhjh0sq1j.eot');
-  src: url('//at.alicdn.com/t/font_1103305_2vxhjh0sq1j.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1103305_2vxhjh0sq1j.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1103305_2vxhjh0sq1j.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1103305_2vxhjh0sq1j.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1103305_2vxhjh0sq1j.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1103305_xcgp1zmobkc.eot');
+  src: url('//at.alicdn.com/t/font_1103305_xcgp1zmobkc.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1103305_xcgp1zmobkc.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1103305_xcgp1zmobkc.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1103305_xcgp1zmobkc.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1103305_xcgp1zmobkc.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;

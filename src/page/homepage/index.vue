@@ -1,12 +1,16 @@
 <template>
     <div class="home">
-        <button @click='getdata'>获取数据</button>
+        <div class="header">
+            home
+        </div>
+        <FooterNav/>
     </div>
 </template>
 
 
 <script>
 import API from '../../api/api.js'
+import FooterNav from '@/components/footernav'
 export default {
     name:'home',
     data(){
@@ -33,8 +37,10 @@ export default {
                 console.log(error)
             })
         }
+    },
+    components:{
+        FooterNav,
     }
-    
 }
 </script>
 

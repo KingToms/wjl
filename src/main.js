@@ -6,6 +6,7 @@ import Home from '@/page/homepage/index'
 import router from './router/index'
 import axios from 'axios'
 import 'lib-flexible'
+import store from './store/store'
 
 //引入mockjs
 require("./mock.js")
@@ -24,6 +25,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: {App},
   template: '<App/>'
 })

@@ -1,22 +1,30 @@
 <template>
   <div class="FooterNav">
     <ul class="footernav">
-        <li :class="className" @click="torouter($event)">
-            <i class="iconfont" >&#xe601;</i>
-            首页
-        </li>
-        <li :class="className" @click="torouter($event)">
-            <i class="iconfont" >&#xe717;</i>
-            发现
-        </li>
-        <li :class="className" @click="torouter($event)">
-            <i class="iconfont" >&#xe65d;</i>
-            订单
-        </li>
-        <li :class="className" @click="torouter($event)">
-            <i class="iconfont" >&#xe600;</i>
-            我的
-        </li>
+        <!-- <li :class="className" @click="torouter($event)"> -->
+            <router-link to="/home">
+                <i class="iconfont" >&#xe601;</i>
+                <p>首页</p> 
+            </router-link>
+        <!-- </li> -->
+        <!-- <li :class="className" @click="torouter($event)"> -->
+            <router-link to="/find">
+                <i class="iconfont" >&#xe717;</i>
+                <p>发现</p> 
+            </router-link>
+        <!-- </li> -->
+        <!-- <li :class="className" @click="torouter($event)"> -->
+            <router-link to="order">
+                <i class="iconfont" >&#xe65d;</i>
+                <p>订单</p> 
+            </router-link>
+        <!-- </li> -->
+        <!-- <li :class="className" @click="torouter($event)"> -->
+            <router-link to="user">
+                <i class="iconfont" >&#xe600;</i>
+                <p>我的</p> 
+            </router-link>
+        <!-- </li> -->
     </ul>
   </div>
 </template>
@@ -65,7 +73,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.active{
+*{
+    margin: 0;
+    padding: 0;
+}
+.router-link-active{
     color: #d81e06;
 }
 .footernav{
@@ -75,7 +87,7 @@ export default {
     justify-content: space-around;
     position: fixed;
     bottom: 0;
-    li{
+    a{
         padding:  .1rem 0;
         display: flex;
         flex-direction: column;
